@@ -2040,13 +2040,17 @@ i.fa {
   color: #333;
 }
 
-.education .school .logo {
-  width: 100px;
-  height: 100px;
-  margin-right: 10px;
+.education .school:last-child {
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
-
+.education .school .logo {
+  width: 85px;
+  height: 85px;
+  margin-right: 15px;
+}
 
 .skill-info .label {
   display: inline-block;
@@ -2080,4 +2084,28 @@ i.fa {
 .skill-info .title {
   font-size: 14px;
   color: #333;
+}
+
+
+/*======== 二维码悬停 =========*/
+
+.qrcode{
+	position: relative;
+}
+.qrcode img{
+  	position: absolute;
+  	top: 15px;
+  	right: 0px;
+  	width: 100px;
+  	height: 100px;
+  	transform-origin: bottom;
+  	transform: scale(0);
+  	opacity: 0;
+  	-webkit-transition: all .4s ease-in-out;
+  	-o-transition: all .4s ease-in-out;
+  	transition: all .4s ease-in-out;
+}
+.qrcode:hover img {
+  	transform: scale(1);
+  	opacity: 1;
 }
